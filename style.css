@@ -1,0 +1,45 @@
+/*
+* elem szintű k.
+*/
+html{
+	background-color: #f5f5f5;
+	width: 100%;
+	min-height: 100%;
+	padding: 0;
+	margin: 0;
+}
+#grid1{
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	min-height: 100%;
+	display: grid;
+	grid-template-columns: 23% 1fr; 
+	grid-template-rows: 1500px;	
+}
+#grid2{
+	grid-column: 1;
+	grid-row: 1;
+	
+	background-color: #708090;
+	padding: 10px;
+	
+	display: grid;
+	grid-template:
+	"a" 15vw
+	"b" auto
+	/ 1fr;
+}
+#grid3{
+	
+}
+#grid2_1{
+	grid-area: a;
+	background-image: url('photo-1487750022055-974f66325e0f.webp');
+	background-size: 100% 100%;
+}
+#grid2_2{
+	grid-area: b;
+	padding: 10px;
+	color: white;
+}
